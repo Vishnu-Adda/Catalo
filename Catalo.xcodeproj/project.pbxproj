@@ -13,6 +13,8 @@
 		6C3891BF2650B88300170B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3891BD2650B88300170B78 /* Main.storyboard */; };
 		6C3891C12650B88300170B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3891C02650B88300170B78 /* Assets.xcassets */; };
 		6C3891C42650B88300170B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3891C22650B88300170B78 /* LaunchScreen.storyboard */; };
+		6C3891EC2657925200170B78 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3891EB2657925200170B78 /* FormViewController.swift */; };
+		6C3891EE2657987500170B78 /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3891ED2657987500170B78 /* StorageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6C3891C02650B88300170B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3891C32650B88300170B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C3891C52650B88300170B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3891EB2657925200170B78 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		6C3891ED2657987500170B78 /* StorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				6C3891B72650B88300170B78 /* AppDelegate.swift */,
 				6C3891B92650B88300170B78 /* SceneDelegate.swift */,
 				6C3891BB2650B88300170B78 /* ViewController.swift */,
+				6C3891EB2657925200170B78 /* FormViewController.swift */,
 				6C3891BD2650B88300170B78 /* Main.storyboard */,
 				6C3891C02650B88300170B78 /* Assets.xcassets */,
 				6C3891C22650B88300170B78 /* LaunchScreen.storyboard */,
 				6C3891C52650B88300170B78 /* Info.plist */,
+				6C3891ED2657987500170B78 /* StorageController.swift */,
 			);
 			path = Catalo;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			files = (
 				6C3891BC2650B88300170B78 /* ViewController.swift in Sources */,
 				6C3891B82650B88300170B78 /* AppDelegate.swift in Sources */,
+				6C3891EC2657925200170B78 /* FormViewController.swift in Sources */,
 				6C3891BA2650B88300170B78 /* SceneDelegate.swift in Sources */,
+				6C3891EE2657987500170B78 /* StorageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
