@@ -1,0 +1,6 @@
+framework module Pods_Catalo {
+  umbrella header "Pods-Catalo-umbrella.h"
+
+  export *
+  module * { export * }
+}
