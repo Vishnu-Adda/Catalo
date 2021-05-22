@@ -8,11 +8,26 @@
 import UIKit
 
 class StorageController: UIViewController {
+    
+    var locationY = 300
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if !locations.isEmpty {
+            for locale in locations {
+                let label = UILabel(frame: CGRect(x: 100, y: 200, width: 200, height: 30))
+                label.center = CGPoint(x: 175, y: locationY)
+                label.textAlignment = .left
+                label.text = locale.storedTitle
+                label.font = UIFont(name: "Helvetica Neue", size: 30)
+                self.view.addSubview(label)
+                
+                locationY += 50
+            }
+
+        }
+
     }
 
 }

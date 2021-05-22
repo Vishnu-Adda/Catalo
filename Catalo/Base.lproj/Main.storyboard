@@ -295,6 +295,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxT-WL-zp7">
+                                <rect key="frame" x="32" y="204" width="159" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-Ma-Yjb">
+                                <rect key="frame" x="280" y="204" width="90" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="34D-lw-nR5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -405,7 +419,8 @@
                                 </state>
                                 <connections>
                                     <action selector="submitForm:" destination="aiH-MK-PxW" eventType="touchUpInside" id="3Io-ZM-DCv"/>
-                                    <segue destination="2XG-wV-Vui" kind="show" id="qV7-jN-c11"/>
+                                    <action selector="submitPressed:" destination="Rb6-Dt-NqF" eventType="touchUpInside" id="mjz-fh-mpB"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="py6-PP-ecn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -413,6 +428,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ot0-7y-c2Z"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="4Z1-1A-SvU" id="Dh1-AL-tJv"/>
+                        <outlet property="descriptionLabel" destination="Hs8-VS-5se" id="OjJ-oH-UMY"/>
+                        <outlet property="stateLabel" destination="1qb-ug-yL7" id="48j-Yu-LLI"/>
+                        <outlet property="streetLabel" destination="cql-VP-U2t" id="aHW-Ii-vs8"/>
+                        <outlet property="titleLabel" destination="mXS-CO-uZM" id="VBQ-Qe-nBm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sg-8L-SF9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -540,8 +562,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UfY-IP-va9"/>
-        <segue reference="qaY-Cu-puz"/>
+        <segue reference="Nlr-hs-P9p"/>
         <segue reference="3ky-Gb-P4r"/>
     </inferredMetricsTieBreakers>
     <resources>
