@@ -10,6 +10,7 @@ import UIKit
 class StorageController: UIViewController {
     
     var locationY = 300
+    var itemY     = 300
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,19 @@ class StorageController: UIViewController {
                 locationY += 50
             }
 
+        }
+        
+        if !items.isEmpty {
+            for possession in items {
+                let label = UILabel(frame: CGRect(x: 100, y: 200, width: 200, height: 30))
+                label.center = CGPoint(x: 400, y: itemY)
+                label.textAlignment = .left
+                label.text = possession.storedTitle
+                label.font = UIFont(name: "Helvetica Neue", size: 30)
+                self.view.addSubview(label)
+                
+                itemY += 50
+            }
         }
 
     }
